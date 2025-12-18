@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Fake ID Detection System</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+  <h1>Fake Identity Detection System</h1>
+  <p class="subtitle">Behavioral & Heuristic Analysis (Client-Side)</p>
+
+  <form id="idForm">
+    <input type="text" id="name" placeholder="Full Name" required>
+    <input type="number" id="age" placeholder="Age" required>
+    <input type="date" id="dob" required>
+    <input type="email" id="email" placeholder="Email Address" required>
+    <input type="tel" id="phone" placeholder="Mobile Number" required>
+    <textarea id="address" placeholder="Residential Address" required></textarea>
+
+    <button type="submit">Analyze Identity</button>
+  </form>
+
+  <div id="result" class="hidden">
+    <h2>Detection Result</h2>
+    <div class="risk-meter">
+      <div id="riskBar" class="risk-bar"></div>
+    </div>
+    <p id="scoreText"></p>
+    <p id="verdict"></p>
+    <ul id="reasons"></ul>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
